@@ -2,12 +2,10 @@ README
 
 Kwynn Buess
 Python code sample exercise for New Constructs
-2015/09/08 - started
-README version: 
-2015/09/09  12:31AM EDT
+1:58am - see history at bottom
 
 
-Besides the requested A - E below, I will likely write an "extras" file (or some such name) with extra notes.
+Besides the requested A - E below, I created an "extras" folder with extra notes.
 
 
 A. APPROACH ************
@@ -39,7 +37,7 @@ All version 3.4.  The major import command was:
 
 from html.parser import HTMLParser
 
-I discuss the other libraries in my "extras" file.  The rest were incidental.
+I discuss the other libraries in my "extras" folder ("more_on_libraries.txt").  The rest were incidental.
 
 
 D. INSTRUCTIONS / RUNNING / EXECUTION *********
@@ -60,4 +58,14 @@ I feel safe in saying I'm on a slow computer.
 E. OUTPUT *********
 
 The two output files are written to the same directory as the PY (.py) file.
+
+************
+************
+DOCUMENT HISTORY
+
+v2: 1:58am, same day (2:00am by last save)
+README version 1 to GitHub: 2015/09/09  12:31AM EDT
+2015/09/08 - started
+
+
 
