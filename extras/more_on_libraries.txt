@@ -1,0 +1,24 @@
+MORE ON LIBRARIES
+
+I used 4 import commands
+
+import codecs
+import json
+from html.parser import HTMLParser
+from collections import OrderedDict
+
+codecs - used to Parse Windows-1252 charset, as discussed in errors_encountered.txt
+json - the required output per the exercise
+HTMLParser - discussed in README
+	Also see   https://docs.python.org/2/library/htmlparser.html
+OrderedDict - below
+
+********
+OrderedDict LIBRARY
+
+I had JSON sorting my output keys in an order other than text, start, end.  I found an 
+example for this, and it worked.
+
+
+***************
+2015/09/09

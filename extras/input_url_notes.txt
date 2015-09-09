@@ -1,0 +1,28 @@
+URL / INPUT NOTES / THE URL ERROR
+
+The input_1_kwynn.html file is from 
+
+http://www.sec.gov/Archives/edgar/data/9092/000000909214000004/bmi-20131231x10k.htm
+
+The New Constructs instructions give this URL:  http://goo.gl/UL5o3
+
+That takes me to something completely different.  (I will refrain from speculating as to why this is for now.)
+
+For a more detailed record, the document is:
+
+UNITED STATES SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
+FORM 10-K
+Annual Report Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934
+for the fiscal year ended December 31, 2013
+BADGER METER, INC.
+4545 W. Brown Deer Road
+Milwaukee, Wisconsin 53223
+(414) 355-0400
+A Wisconsin Corporation
+IRS Employer Identification No. 39-0143280
+Commission File No. 001-06706
+
+**********
+2015/09/09
+
