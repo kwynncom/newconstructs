@@ -1,19 +1,19 @@
 INPUT_FILE = "input_1_kwynn.html"
 
-# Kwynn Buess 2015/09/08 for New Constructs - see README
+# Kwynn Buess 2015/09/11 for New Constructs - UNICODE FIXES - then spacing
 
 import codecs
 import json
 from html.parser import HTMLParser
 from collections import OrderedDict
 
-rawFileHTML = codecs.open (INPUT_FILE, 'r','cp1252').read() # if not codecs, you'll get Kwynn-utf8-error-2308
+rawFileHTML = codecs.open (INPUT_FILE, 'r','cp1252').read()
 
 class MyHTMLParser(HTMLParser):
 
 	def __init__(self):
 
-		super().__init__()  # if skip this, you'll get Kwynn-rawdata-error-2049
+		super().__init__()
 		
 		self.wholeFileTextStr = ""
 		self.divStr 	      = ""  # temporary for each div's text
@@ -23,7 +23,7 @@ class MyHTMLParser(HTMLParser):
 		
 	def handle_starttag(self, tag, attrs):
 		if tag == 'table' : self.inTable = True
-		if tag == 'div'   :	self.divStrStartIndex = len(self.wholeFileTextStr.encode('utf-8'))
+		if tag == 'div'   : self.divStrStartIndex = len(self.wholeFileTextStr.encode('utf-8'))
 
 	def handle_endtag(self, tag):
 		if tag == 'td'    : self.wholeFileTextStr += ' '    
@@ -36,16 +36,20 @@ class MyHTMLParser(HTMLParser):
 			
 			if '$' in self.divStr : 
 				self.paragraphArray.append(
-										OrderedDict(
-												[('text' , self.divStr),('start', self.divStrStartIndex),('end'  , self.divStrStartIndex + divStrLen)]
-										)
-									)
+						OrderedDict(
+								[  
+									('text' , self.divStr), 
+									('start', self.divStrStartIndex), 
+									('end', self.divStrStartIndex + divStrLen)  
+								]
+						)
+					)
 			
 			self.wholeFileTextStr += "\n\n"
 			self.divStr = ""
 
-	def handle_data(self, rawText):    # data as in "leaf," raw text, no HTML left, aka inner text or leaf innerHTML
-		self.wholeFileTextStr 			  += rawText
+	def handle_data(self, rawText):
+		self.wholeFileTextStr			  += rawText
 		if not self.inTable : self.divStr += rawText
 
 # END HTMLParser class ********
