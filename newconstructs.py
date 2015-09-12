@@ -1,6 +1,6 @@
 INPUT_FILE = "input_1_kwynn.html"
 
-# Kwynn Buess 2015/09/11 for New Constructs - UNICODE FIXES - then whitespace (x3)
+# Kwynn Buess 2015/09/11 for New Constructs - UNICODE FIXES - then whitespace (x4)
 
 import codecs
 import json
@@ -18,7 +18,7 @@ class MyHTMLParser(HTMLParser):
 		self.wholeFileTextStr = ""
 		self.divStr 	      = ""  # temporary for each div's text
 		self.divStrStartIndex = 0
-		self.inTable		  = False
+		self.inTable          = False
 		self.paragraphArray   = []
 		
 	def handle_starttag(self, tag, attrs):
@@ -49,7 +49,7 @@ class MyHTMLParser(HTMLParser):
 			self.divStr = ""
 
 	def handle_data(self, rawText):
-		self.wholeFileTextStr			  += rawText
+		self.wholeFileTextStr             += rawText
 		if not self.inTable : self.divStr += rawText
 
 # END HTMLParser class ********
