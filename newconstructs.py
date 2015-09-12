@@ -1,6 +1,6 @@
 INPUT_FILE = "input_1_kwynn.html"
 
-# Kwynn Buess 2015/09/11 for New Constructs - UNICODE FIXES - then whitespace (x2)
+# Kwynn Buess 2015/09/11 for New Constructs - UNICODE FIXES - then whitespace (x3)
 
 import codecs
 import json
