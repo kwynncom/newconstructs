@@ -23,7 +23,7 @@ class MyHTMLParser(HTMLParser):
 		
 	def handle_starttag(self, tag, attrs):
 		if tag == 'table' : self.inTable = True
-		if tag == 'div'   :	self.divStrStartIndex = len(self.wholeFileTextStr)
+		if tag == 'div'   :	self.divStrStartIndex = len(self.wholeFileTextStr.encode('utf-8'))
 
 	def handle_endtag(self, tag):
 		if tag == 'td'    : self.wholeFileTextStr += ' '    
@@ -31,7 +31,7 @@ class MyHTMLParser(HTMLParser):
 		if tag == 'table' : self.inTable = False
 		if tag == 'div'   : 
 
-			divStrLen = len(self.divStr)
+			divStrLen = len(self.divStr.encode('utf-8'))
 			if divStrLen == 0 : return
 			
 			if '$' in self.divStr : 
