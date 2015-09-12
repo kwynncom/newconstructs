@@ -9,6 +9,8 @@ from collections import OrderedDict
 
 rawFileHTML = codecs.open (INPUT_FILE, 'r','cp1252').read()
 
+print('Kwynn - working version - 2015/09/11 11:56pm EDT');
+
 class MyHTMLParser(HTMLParser):
 
 	def __init__(self):
