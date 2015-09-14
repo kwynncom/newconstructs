@@ -1,6 +1,6 @@
 INPUT_FILE = "input_1_kwynn.html"
 
-# Kwynn Buess 2015/09/11 for New Constructs - UNICODE FIXES - then whitespace (x4)
+# Kwynn Buess 2015/09/14 2:48am EDT for New Constructs - UNICODE FIXES - then end = len - 1
 
 import codecs
 import json
@@ -8,8 +8,6 @@ from html.parser import HTMLParser
 from collections import OrderedDict
 
 rawFileHTML = codecs.open (INPUT_FILE, 'r','cp1252').read()
-
-print('Kwynn - working version - 2015/09/11 11:56pm EDT');
 
 class MyHTMLParser(HTMLParser):
 
@@ -42,7 +40,7 @@ class MyHTMLParser(HTMLParser):
 								[  
 									('text' , self.divStr), 
 									('start', self.divStrStartIndex), 
-									('end', self.divStrStartIndex + divStrLen)  
+									('end'  , self.divStrStartIndex + divStrLen - 1) # -1 added 09/14 2:48am  
 								]
 						)
 					)
