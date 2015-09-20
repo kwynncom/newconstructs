@@ -4,13 +4,19 @@ Kwynn Buess
 Python code sample exercise for New Constructs
 
 ***
-***** REVISED ***** 2015/09/11  ~10:55pm EDT
-***
-
-The new version of the code's offsets should work--start / end offsets.
-
-It's likely to probable that I will keep posting stuff.
+***** REVISED ***** 2015/09/19  ~11:54pm EDT
+***   2ND MAJOR REVISION / 3rd major version ****
 
 
-(See the previous version in Github for the originally requested README.)
+*** NEW APPROACH ***
+
+The output is identical to the previous version, and I understand the previous version was verified as correct by New Constructs.
+
+I eliminated the n-squared algorithm where I unnecessarily called "len()" on my whole document / file text string.  I now call "len()" on an 'n' (linear) basis rather than n-squared.  
+
+I did this with a new, second class ("docClass") to keep track of paragraph and document lengths and strings.
+
+With the new object, I also reduced dollar-sign seeks.  
+
+I also reduced the complexity of the original "MyHTMLParser" class.  This class should now be doing almost precisely what it should do--no more, no less.
 
