@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python test</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<h1>Python Engineer Code Exercise</h1>
+
+<h2>Instructions</h2>
+<ol>
+	<li>Once you receive these instructions, we'd like you to deliver your solution or partial solution within 24 hours.</li>
+	<li>Retrieve the html SEC filing from 
+			<a href='http://www.sec.gov/Archives/edgar/data/9092/000000909214000004/bmi-20131231x10k.htm'>
+							 http://www.sec.gov/Archives/edgar/data/9092/000000909214000004/bmi-20131231x10k.htm
+			</a>
+	</li>
+	<li>Please produce the following, to two separate txt files:
+		<ol type='A'>
+			<li>A text version of the filing (at least partially formatted) [ document.txt ]</li>
+			<li>A list of paragraphs, excluding text in tables, from the filing that contain a dollar sign, plus the paragraph start index and the paragraph index in the text document from step A. [ paragraphs.txt ]</li>
+		</ol>
+	</li>
+</ol>
+
+<h2>Deliverables</h2>
+<ol>
+<li>Source code (excluding libraries)</li>
+<li>README containing
+	<ol type='A'>
+		<li>Brief description of your approach to the problem</li>
+		<li>Approximate amount of time you spent working on your solution</li>
+		<li>List of any libraries used, including version information</li>
+		<li>Instructions for running</li>
+		<li>Location of output files (document.txt and paragraphs.txt)</li>
+	</ol>
+</li>
+</ol>
+
+<h2>Submission</h2>
+<ol>
+	<li>Please submit your solution by sharing a git repo containing the deliverables listed above with us via either github or bitbucket.</li>
+	<li>You can share it via github by following the instructions <a href='https://help.github.com/articles/adding-collaborators-to-a-personal-repository/'>here</a> and adding 
+			username [removed].</li>
+	<li>You can share it via bitbucket by following the instructions <a href='https://www.youtube.com/watch?v=9qvN_LPnph4'>in this video</a> and sharing with username [removed].</li>
+	<li>Please also send an email to [removed] to let him know you've submitted your solution.</li>
+</ol>
+
+<h2>Grading (not in order of importance)</h2>
+<ol>
+	<li>Code style</li>
+	<li>Leveraging of libraries</li>
+	<li>Correctness of solution</li>
+	<li>Generality of solution (we will apply this solution to other sec filings and see how well it performs)</li>
+	<li>Run speed of solution</li>
+</ol>
+
+<h2>Notes</h2>
+<ol>
+	<li>We expect you to spend 2-4 hours on this project. If you get to the time limit and have a partially working solution, please submit it. We want to get an idea of how you approach the problem, and completion isn't necessarily a requirement for that.</li>
+	<li>Conversion of html version of the filing to a text version of the filing is required.</li>
+	<li>Your solution must be runnable in Python3 (we are using Python 3.4)</li>
+	<li>This test simulates an in-house use case, so we will compare your solution to ours.</li>
+</ol>
+
+<h2>Example Output for paragraphs.txt file</h2>
+<p>
+<pre>
+[
+  {
+    ‘text’: ‘This is the text of a paragraph with a $ sign...’, 
+    ‘start’: 105432,
+    ‘end’: 105890,
+  },
+  {
+    ‘text’: ‘This is the text of a second paragraph with a $ sign...’, 
+    ‘start’: 105957,
+    ‘end’: 106010,
+  },
+  ...
+]
+</pre>
+<p>These values do not represent values from the document we asked you to use.</p>
+
+<p style='margin-top: 2em; font-family: sans-serif'>
+    <a href="http://validator.w3.org/check?uri=referer">check this document</a> for HTML5 validity
+</p>
+
+</body>
+</html>
+
