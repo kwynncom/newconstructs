@@ -1,22 +1,12 @@
 README
 
 Kwynn Buess
-Python code sample exercise for New Constructs
+Python code sample exercise
 
-***
-***** REVISED ***** 2015/09/19  ~11:54pm EDT
-***   2ND MAJOR REVISION / 3rd major version ****
+I'm putting the assignment / the instructions for this code in the "extras" folder in the_assignment_instructions.html.
 
 
-*** NEW APPROACH ***
+HISTORY
 
-The output is identical to the previous version, and I understand the previous version was verified as correct by New Constructs.
-
-I eliminated the n-squared algorithm where I unnecessarily called "len()" on my whole document / file text string.  I now call "len()" on an 'n' (linear) basis rather than n-squared.  
-
-I did this with a new, second class ("docClass") to keep track of paragraph and document lengths and strings.
-
-With the new object, I also reduced dollar-sign seeks.  
-
-I also reduced the complexity of the original "MyHTMLParser" class.  This class should now be doing almost precisely what it should do--no more, no less.
+The original READMEs fulfilled those instructions, so you can go backwards with GitHub to see that.  
 
